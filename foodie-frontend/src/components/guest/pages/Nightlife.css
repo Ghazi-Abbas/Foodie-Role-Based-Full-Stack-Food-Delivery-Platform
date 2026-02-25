@@ -1,0 +1,281 @@
+/* ================= NIGHTLIFE PAGE ================= */
+
+
+/* ================= HERO ================= */
+
+
+
+.nightlife-hero {
+  height: 300px;
+  border-radius: 18px;
+  background-image: url("https://images.unsplash.com/photo-1516450360452-9312f5e86fc7");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.nightlife-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.85),
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.25)
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 32px;
+  color: #fff;
+}
+
+.nightlife-hero-overlay h1 {
+  font-size: 34px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.nightlife-hero-overlay p {
+  font-size: 14px;
+  color: #e0e0e0;
+  max-width: 520px;
+}
+
+/* ================= SECTIONS ================= */
+
+.nightlife-section {
+  margin-bottom: 40px;
+}
+
+.nightlife-section h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 28px 0 16px;
+  color: #1c1c1c;
+}
+
+/* ================= DRINKS ================= */
+
+.night-drink-row {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 6px;
+}
+
+.night-drink-row::-webkit-scrollbar {
+  display: none;
+}
+
+.night-drink-card {
+  min-width: 210px;
+  height: 270px;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  background: #000;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.night-drink-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.9);
+  transition: transform 0.35s ease;
+}
+
+.night-drink-card:hover img {
+  transform: scale(1.05);
+}
+
+.drink-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.85),
+    rgba(0, 0, 0, 0.25),
+    transparent
+  );
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: #fff;
+}
+
+.drink-tag {
+  font-size: 11px;
+  font-weight: 600;
+  color: #ff5bbd;
+  margin-bottom: 6px;
+}
+
+.drink-overlay h4 {
+  font-size: 17px;
+  margin: 4px 0;
+}
+
+.drink-overlay p {
+  font-size: 14px;
+  color: #e6e6e6;
+}
+
+/* ================= RESTAURANTS ================= */
+
+.nightlife-grid {
+  gap: 26px;
+}
+
+.night-card-wrapper {
+  position: relative;
+}
+
+.night-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(0, 0, 0, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-size: 11px;
+  padding: 6px 12px;
+  border-radius: 14px;
+  z-index: 3;
+}
+
+/* ================= EMPTY / ERROR ================= */
+
+.night-empty {
+  color: #888;
+  font-size: 14px;
+}
+
+.error-text {
+  color: #d32f2f;
+  margin-bottom: 12px;
+}
+/* ================= DRINKS BANNER ================= */
+
+/* ================= DRINKS BANNER ================= */
+
+.night-drinks-banner {
+  height: 180px;
+  border-radius: 16px;
+  margin: 32px 0 22px;
+
+  background-image: url("https://images.pexels.com/photos/274192/pexels-photo-274192.jpeg");
+  background-size: cover;
+  background-position: center;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.night-drinks-banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.85),
+    rgba(0, 0, 0, 0.35)
+  );
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+}
+
+.night-drinks-banner-overlay h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.night-drinks-banner-overlay p {
+  font-size: 14px;
+  color: #e0e0e0;
+}
+
+/* ===== SECTION HEADER ===== */
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+/* ===== SLIDER BUTTONS ===== */
+.slider-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.slider-actions button {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid #e0e0e0;
+  background: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.slider-actions button:hover {
+  background: #f2f2f2;
+}
+
+/* ===== DRINK ROW ===== */
+.night-drink-row {
+  display: flex;
+  gap: 20px;
+
+  
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 6px;
+}
+
+.night-drink-row::-webkit-scrollbar {
+  display: none;
+}
+/* ===== DRINK SLIDER WRAPPER ===== */
+.drink-slider-wrapper {
+  position: relative;
+}
+
+/* ===== FLOATING SCROLL BUTTONS ===== */
+.drink-scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  font-size: 22px;
+  cursor: pointer;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.drink-scroll-btn.left {
+  left: -18px;
+}
+
+.drink-scroll-btn.right {
+  right: -18px;
+}
+
+.drink-scroll-btn:hover {
+  background: #f2f2f2;
+}

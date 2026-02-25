@@ -1,0 +1,132 @@
+.status-page {
+  padding: 32px;
+  max-width: 960px;
+}
+
+/* HEADER */
+.status-header h1 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.status-header p {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #64748b;
+}
+
+/* CURRENT STATE */
+.current-state {
+  margin-top: 24px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.current-state h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.state-description {
+  font-size: 14px;
+  color: #64748b;
+}
+
+/* STATUS DOT */
+.status-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+}
+
+.status-dot.open {
+  background: #16a34a;
+}
+
+.status-dot.busy {
+  background: #f59e0b;
+}
+
+.status-dot.closed {
+  background: #dc2626;
+}
+
+/* CONFIG */
+.status-config {
+  margin-top: 32px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.config-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 22px;
+}
+
+.config-group label {
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #334155;
+}
+
+.config-group select,
+.config-group textarea,
+.config-group input {
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.config-group textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+.checkbox-group {
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.hint {
+  margin-top: 6px;
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+/* ACTION BAR */
+.status-actions {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.action-note {
+  font-size: 12px;
+  color: #64748b;
+}
+
+.primary-btn {
+  background: #0f172a;
+  color: #ffffff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.primary-btn:hover {
+  background: #020617;
+}

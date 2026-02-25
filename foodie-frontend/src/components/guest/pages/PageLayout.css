@@ -1,0 +1,117 @@
+/* ================================
+   ZOMATO PAGE LAYOUT
+================================ */
+
+
+/* Soft grey canvas like Zomato */
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 20px 60px;
+  background: #fafafa;
+}
+.zomato-shell {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px 60px;
+}
+/* Every major section spacing */
+.page > * {
+  margin-bottom: 40px;
+}
+
+/* Section titles */
+.page h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #1c1c1c;
+  margin-bottom: 18px;
+}
+
+/* Section wrapper feel */
+.collections-section,
+.offer-swiper {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+}
+
+/* ================================
+   BRAND ROW (Delivery page)
+================================ */
+
+.brand-row {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  scroll-behavior: smooth;
+}
+
+.brand-row::-webkit-scrollbar {
+  display: none;
+}
+
+/* ================================
+   RESTAURANT GRID (Zomato style)
+================================ */
+
+.restaurant-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+/* Restaurant card polish */
+.restaurant-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.04);
+}
+
+.restaurant-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 40px rgba(0,0,0,0.12);
+}
+
+/* ================================
+   MOBILE RESPONSIVENESS
+================================ */
+
+@media (max-width: 1024px) {
+  .restaurant-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .page {
+    padding: 16px 14px 40px;
+  }
+
+  .page h2 {
+    font-size: 22px;
+    margin-bottom: 14px;
+  }
+
+  .restaurant-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .brand-row {
+    gap: 16px;
+  }
+
+  .collections-section,
+  .offer-swiper {
+    padding: 16px;
+  }
+}
+.mixed-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}

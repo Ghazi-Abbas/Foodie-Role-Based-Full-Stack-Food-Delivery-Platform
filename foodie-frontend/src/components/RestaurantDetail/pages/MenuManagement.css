@@ -1,0 +1,156 @@
+.menu-page {
+  padding: 24px 32px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.menu-header h1 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.menu-header p {
+  font-size: 13px;
+  color: #64748b;
+  margin-top: 4px;
+}
+
+.primary-btn {
+  background: #0f172a;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  font-size: 13px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.secondary-btn {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  padding: 8px 14px;
+  font-size: 13px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* ADD FORM */
+.add-form {
+  margin-bottom: 32px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.form-grid input,
+.form-grid select {
+  padding: 10px;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.preview {
+  margin-top: 12px;
+  max-width: 120px;
+  border-radius: 6px;
+  border: 1px solid #e5e7eb;
+}
+
+.form-actions {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+}
+
+/* CATEGORY */
+.menu-category {
+  margin-bottom: 28px;
+}
+
+.menu-category h2 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* TABLE */
+.menu-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.menu-table th,
+.menu-table td {
+  padding: 14px;
+  font-size: 14px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.menu-table th {
+  font-size: 12px;
+  color: #64748b;
+  background: #f8fafc;
+}
+
+.item-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+}
+
+.thumb {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* STATUS */
+.availability {
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+.available {
+  background: #ecfdf5;
+  color: #065f46;
+}
+
+.unavailable {
+  background: #fef2f2;
+  color: #991b1b;
+}
+
+.text-btn {
+  background: none;
+  border: none;
+  font-size: 13px;
+  color: #2563eb;
+  cursor: pointer;
+}
+
+/* EMPTY */
+.empty {
+  text-align: center;
+  padding: 20px;
+  color: #94a3b8;
+}

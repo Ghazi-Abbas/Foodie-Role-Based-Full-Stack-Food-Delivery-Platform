@@ -1,0 +1,57 @@
+.collection-card {
+  position: relative;
+  width: 280px;
+  height: 320px;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+/* Image */
+.collection-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.4s ease;
+}
+
+/* Dark gradient */
+.collection-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.9) 0%,
+    rgba(0,0,0,0.65) 40%,
+    rgba(0,0,0,0.25) 70%,
+    rgba(0,0,0,0) 100%
+  );
+  z-index: 1;
+}
+
+/* Text */
+.overlay {
+  position: absolute;
+  bottom: 18px;
+  left: 18px;
+  z-index: 2;
+  color: white;
+}
+
+.overlay h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.overlay p {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* Hover zoom */
+.collection-card:hover img {
+  transform: scale(1.07);
+}

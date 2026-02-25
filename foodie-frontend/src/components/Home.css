@@ -1,0 +1,335 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+
+/* ================= ROOT ================= */
+:root {
+  --orange: #fc8019;
+  --orange-dark: #e56b00;
+  --text-dark: #282c3f;
+  --text-muted: #686b78;
+  --bg-light: #f8f9fb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: #fff;
+  color: var(--text-dark);
+}
+
+/* ================= HERO ================= */
+.hero {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.75);
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(0,0,0,.7), rgba(0,0,0,.3));
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50%);
+  max-width: 620px;
+  color: #fff;
+}
+
+.hero-content h2 {
+  font-size: 52px;
+  font-weight: 900;
+  line-height: 1.15;
+}
+
+.hero-content span {
+  color: var(--orange);
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin: 14px 0 28px;
+  opacity: .95;
+}
+
+/* Search bar */
+.hero-cta {
+  display: flex;
+  gap: 12px;
+}
+
+.hero-cta input {
+  flex: 1;
+  padding: 15px;
+  border-radius: 8px;
+  border: none;
+  font-size: 15px;
+}
+
+.hero-cta button {
+  padding: 15px 22px;
+  border-radius: 8px;
+  background: var(--orange);
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.hero-cta button:hover {
+  background: var(--orange-dark);
+}
+
+/* ================= OFFERS ================= */
+.offers {
+  display: flex;
+  gap: 20px;
+  padding: 50px 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: var(--bg-light);
+}
+
+.offer-card {
+  min-width: 230px;
+  padding: 22px;
+  border-radius: 14px;
+  color: white;
+}
+
+.offer-card h4 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.offer-card p {
+  margin-top: 8px;
+  font-weight: 500;
+}
+
+.orange { background: #fc8019; }
+.blue { background: #2874f0; }
+.green { background: #1aa260; }
+
+/* ================= AD ================= */
+.ad-banner {
+  max-width: 1200px;
+  margin: 60px auto;
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.ad-banner img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.ad-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: #fff;
+}
+
+.ad-text h3 {
+  font-size: 26px;
+  font-weight: 800;
+}
+
+/* ================= CATEGORIES ================= */
+.categories {
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.categories h3 {
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.category-row {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.category-card {
+  width: 160px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0,0,0,.12);
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform .3s ease;
+}
+
+.category-card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+
+.category-card p {
+  padding: 12px;
+  font-weight: 600;
+}
+
+.category-card:hover {
+  transform: translateY(-6px);
+}
+
+/* ================= RESTAURANTS ================= */
+.restaurants {
+  background: var(--bg-light);
+  padding: 80px 20px;
+}
+
+.restaurants h3 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 40px;
+}
+
+.restaurant-grid {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+  gap: 30px;
+}
+
+.restaurant-card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 12px 35px rgba(0,0,0,.12);
+  transition: transform .3s ease;
+  position: relative;
+}
+
+.restaurant-card:hover {
+  transform: translateY(-6px);
+}
+
+.discount-strip {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: var(--orange);
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.restaurant-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.restaurant-info {
+  padding: 16px;
+}
+
+.restaurant-info h4 {
+  margin: 0 0 6px;
+  font-size: 18px;
+}
+
+.restaurant-info p {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* ================= FEATURES ================= */
+.feature-full-section {
+  padding: 100px 0;
+  background: #fff;
+}
+
+.feature-row {
+  max-width: 1200px;
+  margin: auto;
+  padding: 80px 20px;
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+.feature-row.reverse {
+  flex-direction: row-reverse;
+}
+
+.feature-text h2 {
+  font-size: 34px;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.feature-text p {
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--text-muted);
+}
+
+.feature-img img {
+  width: 100%;
+  max-width: 480px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 18px;
+  box-shadow: 0 20px 50px rgba(0,0,0,.15);
+}
+
+/* ================= APP PROMO ================= */
+.app-promo {
+  background: linear-gradient(135deg, var(--orange), var(--orange-dark));
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.app-promo h2 {
+  font-size: 32px;
+  font-weight: 800;
+}
+
+/* ================= RESPONSIVE ================= */
+@media(max-width:900px) {
+  .hero-content h2 { font-size: 40px; }
+  .feature-row { flex-direction: column; text-align: center; }
+  .hero-cta { flex-direction: column; }
+}
+
+@media(max-width:600px) {
+  .hero-content { left: 6%; max-width: 90%; }
+  .hero-content h2 { font-size: 32px; }
+}

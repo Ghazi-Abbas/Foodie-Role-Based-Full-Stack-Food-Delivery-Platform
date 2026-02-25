@@ -1,0 +1,82 @@
+.collections-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+/* Header */
+.collections-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 24px;
+}
+
+.collections-header h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1c1c1c;
+}
+
+.collections-header p {
+  margin-top: 6px;
+  color: #696969;
+  font-size: 16px;
+  max-width: 650px;
+}
+
+.see-all {
+  color: #e23744;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Carousel wrapper */
+.carousel-wrapper {
+  position: relative;
+}
+
+/* Horizontal scroll row */
+.collections-carousel {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 8px;
+}
+
+.collections-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+/* Arrow buttons */
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: none;
+  background: white;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.18);
+  cursor: pointer;
+  z-index: 10;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scroll-btn.left {
+  left: -20px;
+}
+
+.scroll-btn.right {
+  right: -20px;
+}
+
+.scroll-btn:hover {
+  transform: translateY(-50%) scale(1.08);
+}

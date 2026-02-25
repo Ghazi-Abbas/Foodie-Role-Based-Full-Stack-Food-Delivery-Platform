@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+/* ================= FOOTER ================= */
+.footer {
+  background: #02060c;
+  color: #bfc3c7;
+  padding: 70px 20px 30px;
+  font-family: "Inter", sans-serif;
+}
+
+/* ================= GRID ================= */
+.footer-grid {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1fr 1fr;
+  gap: 50px;
+}
+
+/* ================= BRAND ================= */
+.footer-logo {
+  width: 140px;
+  margin-bottom: 18px;
+}
+
+.footer-desc {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #a2a6ab;
+  max-width: 300px;
+}
+
+/* ================= HEADINGS ================= */
+.footer h4 {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+/* ================= LINKS ================= */
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer ul li {
+  font-size: 14px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  color: #bfc3c7;
+  transition: color 0.2s ease;
+}
+
+.footer ul li:hover {
+  color: #ffffff;
+}
+
+/* ================= CITIES ================= */
+.footer-cities {
+  max-width: 1200px;
+  margin: 50px auto 30px;
+  padding-top: 30px;
+  border-top: 1px solid #1c1f26;
+}
+
+.footer-cities p {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #9da2a8;
+}
+
+/* ================= SOCIAL ================= */
+.footer-bottom {
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 25px;
+  border-top: 1px solid #1c1f26;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  text-align: center;
+}
+
+.socials {
+  display: flex;
+  gap: 14px;
+}
+
+.socials span {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid #2c2f36;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 600;
+  color: #bfc3c7;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.socials span:hover {
+  background: #fc8019;
+  color: #ffffff;
+  border-color: #fc8019;
+}
+
+.footer-bottom p {
+  font-size: 13px;
+  color: #8e9399;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-desc {
+    max-width: 100%;
+  }
+}

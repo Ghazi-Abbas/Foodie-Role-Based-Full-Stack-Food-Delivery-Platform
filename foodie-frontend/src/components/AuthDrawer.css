@@ -1,0 +1,240 @@
+/* ================== GLOBAL ================== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --swiggy-orange: #fc8019;
+  --swiggy-orange-dark: #e56b00;
+  --text-dark: #282c3f;
+  --text-light: #686b78;
+  --border-color: #d4d5d9;
+  --bg-light: #f8f9fb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg-light);
+}
+
+/* ================== OVERLAY ================== */
+.auth-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  justify-content: flex-end;
+  z-index: 3000;
+  animation: fadeIn 0.25s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* ================== DRAWER ================== */
+.auth-drawer {
+  width: 420px;
+  height: 100vh;
+  background: #ffffff;
+  padding: 36px 32px;
+  position: relative;
+  overflow-y: auto;
+  border-left: 1px solid #eee;
+  box-shadow: -10px 0 30px rgba(0, 0, 0, 0.25);
+  animation: slideIn 0.35s ease forwards;
+}
+
+@keyframes slideIn {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+/* Scrollbar */
+.auth-drawer::-webkit-scrollbar {
+  width: 6px;
+}
+.auth-drawer::-webkit-scrollbar-thumb {
+  background: #ddd;
+  border-radius: 6px;
+}
+
+/* ================== HEADER ================== */
+.drawer-header {
+  text-align: left;
+  margin-bottom: 28px;
+}
+
+.drawer-header img {
+  width: 140px;
+  margin-bottom: 14px;
+}
+
+.drawer-header h3 {
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--text-dark);
+}
+
+.drawer-header p {
+  font-size: 14px;
+  color: var(--text-light);
+  margin-top: 4px;
+}
+
+/* ================== CLOSE ================== */
+.auth-close {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  font-size: 22px;
+  cursor: pointer;
+  color: var(--text-light);
+  transition: 0.2s;
+}
+
+.auth-close:hover {
+  color: var(--text-dark);
+}
+
+/* ================== TITLES ================== */
+.auth-title,
+.auth-drawer h2 {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin-top: 10px;
+}
+
+.auth-sub {
+  font-size: 14px;
+  color: var(--text-light);
+  margin-top: 8px;
+}
+
+/* Divider (optional usage) */
+.auth-divider {
+  height: 1px;
+  background: #eee;
+  margin: 22px 0;
+}
+
+/* ================== LINKS ================== */
+.link {
+  color: var(--swiggy-orange);
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 6px;
+}
+
+.link:hover {
+  opacity: 0.85;
+}
+
+/* ================== INPUTS ================== */
+.auth-input,
+.auth-drawer input {
+  margin-top: 18px;
+}
+
+.auth-drawer input {
+  width: 100%;
+  padding: 14px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  font-size: 15px;
+  background: #fff;
+  transition: border 0.2s ease;
+}
+
+.auth-drawer input::placeholder {
+  color: #999;
+}
+
+.auth-drawer input:focus {
+  outline: none;
+  border-color: var(--swiggy-orange);
+}
+
+/* Helper text */
+.auth-helper {
+  font-size: 13px;
+  color: var(--text-light);
+  margin-top: 6px;
+}
+
+/* ================== BUTTON ================== */
+.auth-btn,
+.auth-drawer button {
+  width: 100%;
+  margin-top: 22px;
+  background: var(--swiggy-orange);
+  color: #fff;
+  border: none;
+  padding: 14px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.25s, transform 0.1s;
+}
+
+.auth-btn:hover,
+.auth-drawer button:hover {
+  background: var(--swiggy-orange-dark);
+}
+
+.auth-btn:active,
+.auth-drawer button:active {
+  transform: scale(0.98);
+}
+
+.auth-drawer button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.small-btn {
+  font-size: 14px;
+}
+
+/* ================== OTP ================== */
+.otp-box {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 25px 0;
+}
+
+.otp-box input {
+  width: 46px;
+  height: 52px;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  background: #fafafa;
+  font-weight: 600;
+}
+
+.otp-box input:focus {
+  border-color: var(--swiggy-orange);
+}
+
+/* ================== TIMER ================== */
+.auth-drawer p {
+  font-size: 14px;
+  color: var(--text-light);
+  text-align: center;
+}
+
+/* ================== RESPONSIVE ================== */
+@media (max-width: 480px) {
+  .auth-drawer {
+    width: 100%;
+    border-radius: 0;
+  }
+}

@@ -1,0 +1,140 @@
+.food-item-card {
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.food-item-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.14);
+}
+
+/* ================= IMAGE ================= */
+
+.food-img-wrapper {
+  position: relative;
+  height: 130px; /* Zomato compact height */
+  width: 100%;
+  overflow: hidden;
+}
+
+.food-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+
+.food-item-card:hover img {
+  transform: scale(1.06);
+}
+
+/* Gradient overlay */
+.food-img-wrapper::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.55),
+    rgba(0, 0, 0, 0.05)
+  );
+}
+
+/* ================= OVERLAYS ================= */
+
+.food-rating {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  background: #267e3e;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 3px 6px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  z-index: 2;
+}
+
+/* Veg / Non-veg dot */
+.food-type {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: #fff;
+  border-radius: 6px;
+  padding: 3px;
+  z-index: 2;
+}
+
+.food-type::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.food-type.veg::before {
+  background: #2e7d32;
+}
+
+.food-type.non-veg::before {
+  background: #c62828;
+}
+
+/* ================= INFO ================= */
+
+.food-info {
+  padding: 10px 12px 12px;
+}
+
+.food-name {
+  font-size: 14.5px;
+  font-weight: 600;
+  color: #1c1c1c;
+  margin-bottom: 3px;
+  line-height: 1.2;
+}
+
+.food-restaurant {
+  font-size: 12.5px;
+  color: #696969;
+  margin-bottom: 8px;
+}
+
+/* ================= BOTTOM ================= */
+
+.food-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.food-price {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1c1c1c;
+}
+
+.food-add-btn {
+  border: 1px solid #ef4f5f;
+  background: #fff;
+  color: #ef4f5f;
+  font-weight: 600;
+  font-size: 13px;
+  padding: 4px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.food-add-btn:hover {
+  background: #ef4f5f;
+  color: #fff;
+}

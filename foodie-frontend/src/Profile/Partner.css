@@ -1,0 +1,149 @@
+.partner-hero {
+  width: 100%;
+  height: 100%;        /* 🔥 fill parent */
+  min-height: 480px;  /* Zomato-like tall hero */
+  border-radius: 0;   /* edge-to-edge */
+  background: url("https://images.unsplash.com/photo-1559339352-11d035aa65de")
+    center/cover no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+
+/* Dark gradient overlay like Zomato */
+.partner-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0,0,0,0.85) 0%,
+    rgba(0,0,0,0.7) 45%,
+    rgba(0,0,0,0.2) 75%,
+    rgba(0,0,0,0) 100%
+  );
+  z-index: 1; 
+}
+
+.partner-overlay {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  padding: 50px 60px;
+  max-width: 700px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Heading */
+.partner-overlay h1 {
+  font-size: 36px;
+  line-height: 1.2;
+  margin-bottom: 24px;
+}
+
+.partner-overlay h1 span {
+  color: #ff3b3b;
+}
+
+/* Offer pill */
+.offer-pill {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: rgba(0,0,0,0.6);
+  padding: 14px 20px;
+  border-radius: 30px;
+  width: fit-content;
+  margin-bottom: 28px;
+  backdrop-filter: blur(6px);
+}
+
+.offer-icon {
+  background: #2e7df6;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.offer-pill strong {
+  font-size: 15px;
+}
+
+.offer-pill p {
+  font-size: 12px;
+  color: #ddd;
+}
+
+/* CTA Button */
+.partner-btn {
+  background: #2e7df6;
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  width: fit-content;
+  transition: 0.25s ease;
+}
+
+.partner-btn:hover {
+  background: #1f64d8;
+}
+.profile-content {
+  background: white;
+  border-radius: 12px;
+  padding: 0;
+  overflow: hidden;
+  min-height: 520px;   /* ensures tall content */
+  display: flex;
+}
+
+
+.partner-inner {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.partner-status-card {
+  position: relative;
+  background: rgba(0, 0, 0, 0.75);
+  border-radius: 14px;
+  padding: 26px 28px;
+  max-width: 560px;
+  margin-bottom: 32px;
+  backdrop-filter: blur(14px);
+  box-shadow: 0 18px 50px rgba(0,0,0,0.45);
+  border-left: 4px solid #2e7df6;
+}
+
+.partner-status-card .status-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+
+/* Body text */
+.partner-status-card .status-text {
+  font-size: 14px;
+  line-height: 1.65;
+  color: rgba(255,255,255,0.88);
+}
+
+/* Secondary hint */
+.partner-status-meta {
+  margin-top: 14px;
+  font-size: 12px;
+  color: rgba(255,255,255,0.6);
+}

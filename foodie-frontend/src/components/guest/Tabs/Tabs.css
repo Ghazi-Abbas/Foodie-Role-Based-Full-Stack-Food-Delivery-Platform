@@ -1,0 +1,85 @@
+.tabs-wrapper {
+  display: flex;
+  gap: 48px;
+  
+  background: #fff;
+  border-bottom: 1px solid #f0f0f0;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 20px 20px;
+  background: #fafafa;
+}
+
+
+/* Each tab */
+.tab-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-bottom: 16px;
+  cursor: pointer;
+  color: #696969;
+  font-size: 18px;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.25s ease;
+}
+
+.tab-item:hover {
+  color: #1c1c1c;
+}
+
+/* Icon bubble */
+.tab-icon {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: #f6f6f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s ease;
+}
+
+/* Icon image */
+.tab-icon img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.7;
+}
+
+/* Active icon */
+.tab-icon.active-icon {
+  background: #fff3cd; /* soft yellow like Zomato */
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+.tab-item.active .tab-icon img {
+  filter: none;
+  opacity: 1;
+}
+
+/* Label */
+.tab-label {
+  font-size: 19px;
+}
+
+/* Active tab */
+.tab-item.active {
+  color: #e23744;
+  font-weight: 600;
+}
+
+/* Underline */
+.tab-item.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  background: #e23744;
+  border-radius: 2px;
+}

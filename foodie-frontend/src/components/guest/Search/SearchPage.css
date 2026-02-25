@@ -1,0 +1,125 @@
+/* ================= SEARCH FILTER BAR ================= */
+
+.search-filters {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 20px 0 30px;
+  padding-bottom: 4px;
+  overflow-x: auto;
+}
+
+/* hide scrollbar but allow scroll */
+.search-filters::-webkit-scrollbar {
+  display: none;
+}
+.search-filters {
+  scrollbar-width: none;
+}
+
+/* ================= FILTER PILLS ================= */
+
+.filter-pill {
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid #ddd;
+  background: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+
+.filter-pill:hover {
+  background: #f8f8f8;
+  border-color: #ccc;
+}
+
+/* active (Zomato red) */
+.filter-pill.active {
+  background: #fff1f1;
+  border-color: #e23744;
+  color: #e23744;
+  font-weight: 500;
+}
+
+/* ================= SELECT DROPDOWNS ================= */
+
+.filter-select {
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid #ddd;
+  background: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.filter-select:hover {
+  border-color: #bbb;
+}
+
+/* remove default focus outline */
+.filter-select:focus,
+.filter-pill:focus {
+  outline: none;
+  border-color: #e23744;
+}
+
+/* ================= SEARCH PAGE HEADER ================= */
+
+.search-heading {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.search-heading span {
+  color: #e23744;
+}
+
+.search-subtext {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* ================= FILTER BAR ================= */
+
+.zomato-filter-bar {
+  display: flex;
+  gap: 12px;
+  padding: 16px 0;
+  overflow-x: auto;
+}
+
+.zomato-filter-bar::-webkit-scrollbar {
+  display: none;
+}
+
+/* ================= FILTER CHIP ================= */
+
+.filter-chip {
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid #e0e0e0;
+  background: #fff;
+  font-size: 14px;
+  color: #555;
+  font-weight: 400;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.15s ease;
+}
+
+.filter-chip:hover {
+  background: #f8f8f8;
+}
+
+/* Active */
+.filter-chip.active {
+  border-color: #e23744;
+  color: #e23744;
+  background: #fff;
+  font-weight: 500;
+}

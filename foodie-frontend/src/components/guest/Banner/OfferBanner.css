@@ -1,0 +1,147 @@
+/* WRAPPER */
+.zomato-banner-wrapper {
+  max-width: 1200px;
+  margin: 40px auto;
+  position: relative;
+  overflow: visible;     /* allow arrows */
+}
+
+.zomato-swiper {
+  overflow: hidden;     /* clip banners */
+  border-radius: 18px;
+}
+
+/* BANNER */
+.zomato-banner {
+  width: 100%;
+  height: 295px;
+  border-radius: 18px;
+  overflow: hidden;
+  position: relative;
+}
+
+
+/* Background image */
+.zomato-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Dark Zomato fade */
+.zomato-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.95) 0%,
+    rgba(0, 0, 0, 0.8) 40%,
+    rgba(0, 0, 0, 0.4) 65%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+/* CONTENT */
+.zomato-content {
+  position: absolute;
+  left: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  max-width: 40%;
+}
+
+.zomato-tag {
+  background: #e23744;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 11px;
+  font-weight: 700;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+.zomato-content h2 {
+  font-size: 22px;
+  opacity: 1;
+}
+
+.zomato-content h1 {
+  font-size: 52px;
+  font-weight: 800;
+  margin: 6px 0;
+}
+
+.zomato-content p {
+  font-size: 15px;
+  opacity: 0.85;
+}
+
+.zomato-content button {
+  margin-top: 18px;
+  padding: 12px 22px;
+  background: #e23744;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ARROWS (ZOMATO STYLE) */
+.swiper-button-prev,
+.swiper-button-next {
+  width: 36px;
+  height: 36px;
+  border-radius: 2%;
+  background: white;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 14px;
+  font-weight: 700;
+  color: #444;
+}
+
+.swiper-button-prev {
+  left: -55px;   /* OUTSIDE */
+}
+
+.swiper-button-next {
+  right: -55px;  /* OUTSIDE */
+}
+/* DOTS */
+.swiper-pagination-bullet {
+  background: white;
+  opacity: 0.4;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  transform: scale(1.2);
+}
+.zomato-swiper .swiper-slide {
+  padding: 0 8px;
+}
+.offer-banner {
+  height: 260px;
+  border-radius: 18px;
+  overflow: hidden;     /* only clips image */
+  position: relative;
+}
+.offer-banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0,0,0,0.95) 0%,
+    rgba(0,0,0,0.85) 35%,
+    rgba(0,0,0,0.5) 60%,
+    rgba(0,0,0,0.15) 75%,
+    rgba(0,0,0,0) 100%
+  );
+  z-index: 1;
+}

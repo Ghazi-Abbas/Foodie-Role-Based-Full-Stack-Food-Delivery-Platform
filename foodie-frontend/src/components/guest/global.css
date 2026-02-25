@@ -1,0 +1,19 @@
+.page {
+  padding: 30px 60px;
+}
+
+.collections-row {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+}
+
+.subtext {
+  color: #777;
+  margin-bottom: 14px;
+}
+.zomato-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
