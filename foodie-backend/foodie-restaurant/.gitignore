@@ -1,0 +1,11 @@
+# ENV & SECRETS
+.env
+.env.*
+
+# IDE FILES
+.idea/
+*.iml
+
+# BUILD
+target/
+build/
